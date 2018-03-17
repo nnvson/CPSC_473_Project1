@@ -45,6 +45,7 @@ a {
   text-transform: uppercase;
   font-family: lakeshore;
   font-size: 37px;
+  left: 30px;
 }
 
 /*.thumbnail-item+.thumbnail-item {
