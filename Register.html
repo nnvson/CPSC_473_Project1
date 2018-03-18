@@ -4,34 +4,35 @@
   <head>
     <meta charset="utf-8">
     <title>Register</title>
-    <link href="payment-style.css" rel="stylesheets">
+    <!--<link href="payment-style.css" rel="stylesheets">-->
+    <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   </head>
 
   <body class="container">
     <form data-signup="form">
-      <h1>Register form</h1>
-      <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+      <h1><font color="blue">Register form</font></h1>
+      <p>Required fields are followed by <strong><abbr title="required"><font color="red">*</font></abbr></strong>.</p>
       <section>
         <div class="form-group">
           <label for="username">User Name </label>
-          <strong><abbr title="required">*</abbr></strong>
+          <strong><abbr title="required"><font color="red">*</font></abbr></strong>
           <input class="form-control" id="username" name="user-name" autofocus required>
         </div>
         <div class="form-group">
           <label for="mail">E-mail </label>
-          <strong><abbr title="required">*</abbr></strong>
+          <strong><abbr title="required"><font color="red">*</font></abbr></strong>
           <input class="form-control" type="email" id="mail" name="user-mail" required>
         </div>
         <div class="form-group">
           <label for="pwd">Password </label>
-          <strong><abbr title="required">*</abbr></strong>
+          <strong><abbr title="required"><font color="red">*</font></abbr></strong>
           <input class="form-control" type="password" id="pwd" name="pw-1" required>
         </div>
         <div class="form-group">
           <label for="pwd2">Confirmed Password </label>
-          <strong><abbr title="required">*</abbr></strong>
+          <strong><abbr title="required"><font color="red">*</font></abbr></strong>
           <input class="form-control" type="password" id="pwd2" name="pw-2" required>
         </div>
       </section>
