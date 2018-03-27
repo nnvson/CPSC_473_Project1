@@ -59,7 +59,7 @@
       var modalDialog;
 
       //check passwords matched
-      if (data["pw_1"] != data["pw_2"]) {
+      if (data["password"] != data["password2"]) {
         modalDialog = "<p>Password not matched. Please re-enter password.</p>";
         $(modalDialog).modal();
         return;
@@ -74,10 +74,9 @@
         }
         i++;
       }
-      modalDialog = "<p>Welcome to About Me, " + data["user_name"] + "</p>";
+      modalDialog = "<p>Welcome to About Me, " + data["username"] + "</p>";
       $(modalDialog).modal();
       this.reset;
-      //code for backend to save information to DB
     });
   };
 

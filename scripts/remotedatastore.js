@@ -17,12 +17,7 @@
     $.ajax(this.serverUrl, {
       type: "POST",
       contentType: "application/json",
-      data: JSON.stringify({
-        "username": val.user_name,
-        "password": val.pw_1,
-        "email": val.user_mail,
-        "id": val.id
-      }),
+      data: JSON.stringify(val),
       success: function(serverResponse) {
         console.log(serverResponse);
       },
