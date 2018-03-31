@@ -18,21 +18,17 @@
   //formHandler.addValidateHandler();
 
   formHandler.addSubmitHandler(function(data) {
-
     var modalDialog;
-
     //check passwords matched
     if (data["password"] != data["password2"]) {
       modalDialog = "<p>Password not matched. Please re-enter password.</p>";
       $(modalDialog).modal();
       return;
     }
-
+    //password matched
     newRegSession.registerNew.call(newRegSession, data);
-
     modalDialog = "<p>Welcome to About Me, " + data["username"] + "</p>";
     $(modalDialog).modal();
-    //this.reset;
 
   });
 

@@ -10,12 +10,18 @@
   <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 
+<script>
+  function openPage(pageUrl) {
+    location.href = pageUrl;
+}
+</script>
+
 <body>
   <header class="main-header">
     <h1 class="logo-text">
       <span ><font color="blue" face="lakeshore">About Me</font></span>
-      <button class="btn btn-primary pull-right">Sign In</button>
-      <button class="btn btn-primary pull-right">Sign Up</button>
+      <button class="btn btn-primary pull-right" onclick="openPage('/Login.html')">Sign In</button>
+      <button class="btn btn-primary pull-right" onclick="openPage('/Register.html')">Sign Up</button>
     </h1>
     <link rel="stylesheet" href="stylesheets/styles.css">
   </header>
